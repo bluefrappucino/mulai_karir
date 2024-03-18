@@ -1,4 +1,267 @@
+/*  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+:root {
+  --pr-color: #ffffff;
+  --primary: #ebebeb;
+  --primary2: #d1cece;
+  --primary3: #b2adad;
+  --secondary: #095571;
+  --secondary2: #3a768d;
+  --secondary3: #7db0c1;
+  --dark-blue: #18437a;
+  --bg-grey: #f5f5f5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+section, footer {
+  padding: 80px 0;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  background-color: var(--dark-blue);
+  border-radius: 24px;
+  padding: 10px 32px;
+  min-width: 100px;
+  transition: all 0.2s;
+}
+
+.button-small {
+  font-size: small;
+  border-radius: 20px;
+  padding: 8px 24px;
+}
+
+.button:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #0a2d5b;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar img {
+  width: 100%;
+}
+
+.navbar-brand .careerpath-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #095571;
+  width: 288px;
+  height: 63px;
+}
+
+.nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#hero .container {
+  text-align: center;
+  margin: 0;
+}
+
+#hero h1 {
+  font-size: 80px;
+}
+
+#hero img {
+  width: 80%;
+}
+
+#solution {
+  /* background-color: var(--bg-grey); */
+/* }
+
+#solution img {
+  width: 100%;
+}
+
+#solution .left p {
+  font-size: 24px;
+}
+
+#solution .left img {
+  width: 80%;
+}
+
+#solution a {
+  color: var(--secondary);
+}
+
+#solution .rounded-4 {
+  border: solid 1px var(--secondary);
+  border-radius: 16px;
+}
+
+#about .summary {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#about .stat {
+  text-align: center;
+}
+
+#about .stat img {
+  height: 150px;
+}
+
+#job {
+  background-color: var(--bg-grey);
+}
+
+#job img {
+  height: 40px;
+}
+
+#job .joblist .p-4 {
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 40px -20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 40px -20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 40px -20px rgba(0, 0, 0, 0.5);
+}
+
+#course .list-top {
+  gap: 12px;
+}
+
+#course img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#course .wrapper .p-3 {
+  border: solid 1px var(--primary3);
+  border-radius: 16px;
+}
+
+#course .type {
+  font-size: 16px;
+  color: var(--primary3);
+}
+
+#course .wrapper h5 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#course .location {
+  font-size: 12px
+}
+
+#selfdev {
+  background-color: var(--bg-grey);
+}
+
+#selfdev .selfdev-card {
+  border: solid 1px var(--secondary);
+  border-radius: 16px;
+}
+
+#selfdev img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+#selfdev .d-flex {
+  justify-content: space-between;
+}
+
+#selfdev .selfdev-card p {
+  font-size: small;
+}
+
+#selfdev .cta {
+  display: flex;
+}
+
+#selfdev .cta div {
+  align-self: flex-end;
+}
+
+#community .joblist img {
+  height: 100px;
+}
+
+#community .joblist .p-4 {
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 40px -20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 40px -20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 40px -20px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  background-color: var(--primary);
+}
+
+.footer img {
+  width: 60%;
+}
+
+.footer h1 {
+  font-family: Poppins;
+  color: #095571;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.footer .links {
+  text-align: right;
+}
+
+.footer ul {
+  padding: 0;
+}
+
+.footer li {
+  list-style: none;
+  line-height: 32px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #747474;
+}
+
+.footer-copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 14px;
+  color: white;
+  background-color: #343a40; /* Ubah warna background sesuai kebutuhan */
+/*   padding: 10px;
+  margin: 0;
+}
+ */
+
+ 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
@@ -255,7 +518,7 @@ section, footer {
   width: 100%;
   font-size: 14px;
   color: white;
-  background-color: #343a40; /* Ubah warna background sesuai kebutuhan */
+  background-color: #343a40; /* warna background */
   padding: 10px;
   margin: 0;
 }
